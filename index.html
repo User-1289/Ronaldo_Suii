@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ronaldo suii</title>
+</head>
+<body>
+<center>
+<div>
+<img id="img" width="500" height='400'src="Cristiano-Ronaldo.jpg"><br>
+<button style="width:200px;
+cursor:pointer;
+height:40px;
+border-radius:10px;"onclick="makeSiu()">Make the sui sound</button>
+</div>
+</center>
+<script>
+//let ms = 
+function makeSiu()
+{
+const d = new Date()
+	let sound = new Audio("Org_sui.mp3")
+	sound.play()
+	document.getElementById('img').src = "CR7_siiii.jpg"
+	setTimeout(function() {
+		document.getElementById('img').src = "Cristiano-Ronaldo.jpg"
+	}, 4000)
+	//let seconds = d.getSeconds();
+	//alert(seconds)
+}
+</script>
+</body>
+</html>
